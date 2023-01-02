@@ -1,0 +1,105 @@
+.flexContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  p {
+    font-size: 12px
+  }
+}
+
+.btn {
+  background: #E0E0E0;
+  padding: 8px 16px;
+  border: unset;
+  border-radius: 6px;
+  margin-right: 10px;
+
+  img {
+    width: 15px;
+    margin: 0 8px 0 8px;
+  }
+
+  &:hover,
+  &:focus {
+    background: #AEAEAE;
+  }
+}
+
+.btnContent {
+  display: flex;
+  align-items: center;
+}
+
+.noPointerEvent{
+  pointer-events: none;
+}
+
+.noShadow {
+  background: #3D5AFE;
+  color: white;
+  box-shadow: unset;
+}
+
+.outlined {
+  border: 1px solid #3D5AFE;
+  color: #3D5AFE;
+  background: unset;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    background: #2962FF1A
+  }
+}
+
+.disabled {
+  background: #E0E0E0;
+  color: #9E9E9E;
+  pointer-events: none;
+}
+
+.text {
+  @extend .outlined;
+  border: unset;
+  background: unset;
+}
+
+
+
+.sm {
+  padding: 6px 12px;
+
+}
+
+.lg {
+  padding: 11px 22px;
+}
+
+.primary {
+  background: #3D5AFE;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background: #0039CB;
+  }
+}
+
+.secondary {
+  background: #455A64;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background: #1C313A;
+  }
+}
+
+.danger {
+  background: #D32F2F;
+  color: white;
+
+  &:hover,
+  &:focus {
+    background: #9A0007;
+  }
+}
